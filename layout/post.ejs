@@ -25,6 +25,9 @@ if (theme.plugins.heti && theme.plugins.heti.enable) {
   heti = ' heti';
 }
 %>
+<% if (page.mathjax == true){ %>
+    <%- partial('mathjax') %>
+<% } %>
 <%- partial('_partial/main/navbar/breadcrumb') %>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <article class='content<%- heti %> md <%- post.layout %><%- post.indent ? ' indent' : '' %><%- scrollreveal() %>'>

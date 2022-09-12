@@ -5,6 +5,12 @@ function layoutDiv() {
     return el;
   }
   el += '<div class="widget-wrap" id="markdown">';
+    el += '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>';
+    el += '<span style="font-size: 13px; color: grey;">' +
+      '本站字数：' + totalcount(site) + '&nbsp;&nbsp;&nbsp;&nbsp;' +
+      '访问次数：' + '<span id="busuanzi_value_site_pv"></span>' + '次' +
+      '</span>';
+    el += '<br />';el += '<br />';
     el += '<div class="widget-header cap dis-select">';
       el += '<span class="name">' + item.title + '</span>';
     el += '</div>';
